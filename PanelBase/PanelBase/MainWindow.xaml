@@ -1,0 +1,70 @@
+﻿<!-- ComboBox ScrollView SrollBar Button ListView -->
+<Window x:Class="PanelBase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PanelBase"
+        mc:Ignorable="d" Background="Gray"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+            
+    </Window.Resources>
+    <StackPanel Margin="10">
+        <local:MyBase Margin="4">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock>Text1</TextBlock>
+                <TextBlock Grid.Row="1">Text2</TextBlock>
+            </Grid>
+        </local:MyBase>
+        <ComboBox Style="{StaticResource style_combo}" Margin="4" IsEditable="True">
+            <ComboBoxItem Style="{StaticResource style_comboItem}">apple</ComboBoxItem>
+            <ComboBoxItem Style="{StaticResource style_comboItem}">pear</ComboBoxItem>
+            <ComboBoxItem Style="{StaticResource style_comboItem}">orange</ComboBoxItem>
+        </ComboBox>
+        <Rectangle Name="rect" 
+            Height="50"
+           MouseEnter="rect_MouseEvent" 
+           MouseLeave="rect_MouseEvent">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup Name="MouseStates">
+                    <VisualState Name="MouseEnter">
+                        <Storyboard>
+                            <ColorAnimation To="Green" 
+                          Storyboard.TargetName="rectBrush" 
+                          Storyboard.TargetProperty="Color"/>
+                        </Storyboard>
+                    </VisualState>
+                    <VisualState Name="MouseLeave" />
+                    <VisualStateGroup.Transitions>
+                        <VisualTransition To="MouseLeave" GeneratedDuration="00:00:00"/>
+
+                        <VisualTransition To="MouseEnter" GeneratedDuration="00:00:00.5">
+                            <VisualTransition.GeneratedEasingFunction>
+                                <ExponentialEase EasingMode="EaseOut" Exponent="10"/>
+                            </VisualTransition.GeneratedEasingFunction>
+                        </VisualTransition>
+
+                    </VisualStateGroup.Transitions>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+
+            <Rectangle.Fill>
+                <SolidColorBrush x:Name="rectBrush" Color="Red"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button  Height="32" Style="{StaticResource style_button}"  Margin="4"
+                HorizontalAlignment="Right">Sue</Button>
+        <Button  Height="32" Style="{StaticResource style_button}" Margin="4"
+                HorizontalAlignment="Right">Share</Button>
+
+        <local:QComboBox Width="100" Height="32" x:Name="ui_qcombo">
+
+        </local:QComboBox>
+        <Button>I am here</Button>
+    </StackPanel>
+</Window>
