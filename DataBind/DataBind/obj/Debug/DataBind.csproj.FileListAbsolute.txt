@@ -1,0 +1,15 @@
+D:\vs\wpf\DataBind\DataBind\bin\Debug\DataBind.exe.config
+D:\vs\wpf\DataBind\DataBind\bin\Debug\DataBind.exe
+D:\vs\wpf\DataBind\DataBind\bin\Debug\DataBind.pdb
+D:\vs\wpf\DataBind\DataBind\obj\Debug\DataBind.csprojAssemblyReference.cache
+D:\vs\wpf\DataBind\DataBind\obj\Debug\MainWindow.g.cs
+D:\vs\wpf\DataBind\DataBind\obj\Debug\App.g.cs
+D:\vs\wpf\DataBind\DataBind\obj\Debug\DataBind_MarkupCompile.cache
+D:\vs\wpf\DataBind\DataBind\obj\Debug\DataBind_MarkupCompile.lref
+D:\vs\wpf\DataBind\DataBind\obj\Debug\MainWindow.baml
+D:\vs\wpf\DataBind\DataBind\obj\Debug\DataBind.g.resources
+D:\vs\wpf\DataBind\DataBind\obj\Debug\DataBind.Properties.Resources.resources
+D:\vs\wpf\DataBind\DataBind\obj\Debug\DataBind.csproj.GenerateResource.cache
+D:\vs\wpf\DataBind\DataBind\obj\Debug\DataBind.csproj.CoreCompileInputs.cache
+D:\vs\wpf\DataBind\DataBind\obj\Debug\DataBind.exe
+D:\vs\wpf\DataBind\DataBind\obj\Debug\DataBind.pdb
